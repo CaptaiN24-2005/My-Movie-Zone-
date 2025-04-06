@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Movie Zone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #fff;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #f44336;
+      letter-spacing: 1px;
+    }
+    .hero {
+      background: url('https://i.ibb.co/VxKqYYX/movie-bg.jpg') no-repeat center center/cover;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5em;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .movies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .movie-card {
+      background: #1e1e1e;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+    .movie-card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+    .movie-info {
+      padding: 15px;
+    }
+    .movie-info h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+      color: #f44336;
+    }
+    .movie-info p {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: 2px solid #f44336;
+      color: #f44336;
+      background: transparent;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #f44336;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    @media (max-width: 600px) {
+      header { font-size: 1.5em; }
+      .hero { font-size: 1.2em; }
+    }
+  </style>
+</head>
+<body>
+  <header>My Movie Zone</header>
+  <div class="hero">Explore Latest Movies</div>
+
+  <div class="movies">
+    <div class="movie-card">
+      <img src="https://i.ibb.co/3R4Rxqp/avatar.jpg" alt="Avatar 2">
+      <div class="movie-info">
+        <h3>Avatar: The Way of Water</h3>
+        <p>Return to Pandora in this stunning sci-fi sequel with jaw-dropping visuals.</p>
+        <a href="https://youtu.be/d9MyW72ELq0" target="_blank" class="btn">Watch Trailer</a>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://i.ibb.co/KVmXqWS/batman.jpg" alt="The Batman">
+      <div class="movie-info">
+        <h3>The Batman</h3>
+        <p>Dark, gritty and full of suspense. Robert Pattinson shines as the caped crusader.</p>
+        <a href="https://youtu.be/mqqft2x_Aa4" target="_blank" class="btn">Watch Trailer</a>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://i.ibb.co/GJj4Zmv/john-wick.jpg" alt="John Wick 4">
+      <div class="movie-info">
+        <h3>John Wick 4</h3>
+        <p>Non-stop action, incredible choreography, and Keanu Reeves at his best.</p>
+        <a href="https://youtu.be/qEVUtrk8_B4" target="_blank" class="btn">Watch Trailer</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
